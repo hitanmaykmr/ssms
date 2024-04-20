@@ -31,6 +31,7 @@ header {
   padding: 8px;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 0;
   text-align: center;
   position: fixed;
   top: 0;
@@ -42,6 +43,7 @@ header {
 .header-grid {
   margin-left: 0;
   margin-right: 0;
+  margin-top: 0;
   display: grid;
   grid-template-columns: auto 1fr auto; 
   align-items: center;
@@ -51,6 +53,7 @@ header {
 .logo img {
   margin: 10px;
   margin-bottom: 0;
+  margin-top: 0;
   width: 80px;
   height: 80px;
 }
