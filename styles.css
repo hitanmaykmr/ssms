@@ -4,6 +4,26 @@ body {
   padding: 0;
 }
 
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #4CBB17;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+#scrollBtn:hover {
+  background-color: #4CBB17;
+}
+
 header {
   background-color: #ffffff;
   color: #000000;
@@ -119,8 +139,8 @@ nav a:hover {
 }
 
 .logo img {
-  width: 50px; 
-  height: 50px;
+  width: 70px; 
+  height: 70px;
 }
 
 .school-info {
@@ -129,7 +149,7 @@ nav a:hover {
 
 .school-name {
   margin: 0;
-  font-size: 16px; 
+  font-size: 20px; 
   margin-top: 10px;
 }
 
