@@ -19,9 +19,6 @@
   });
 
 
-
-
-
  // Function to scroll to the top of the page smoothly
  function scrollToTop() {
   window.scrollTo({
@@ -42,3 +39,6 @@ function scrollFunction() {
     document.getElementById("scrollBtn").style.display = "none";
   }
 }
+
+
+
