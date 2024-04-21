@@ -476,6 +476,86 @@ iframe {
   background-color: #195000;
 }
 
+.credits-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.credits-heading {
+  text-align: center;
+  color: #164500;
+  font-size: 30px;
+}
+
+.developers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.developer-item {
+  width: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.developer-item img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.developer-item h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.developer-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.faculty-grid {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.faculty-card {
+  background-color: #ffffff;
+  border: #ccc 1px solid;
+  border-bottom: 5px solid #4CBB17;
+}
+
+.faculty-card img {
+  width: 200px;
+  height: 200px; 
+  object-fit: cover;
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 8px 8px 0 0; 
+}
+
+.faculty-card-content {
+  padding: 20px;
+}
+
+.faculty-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.faculty-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
 @keyframes scroll-notice {
   0% {
     transform: translateY(0);
@@ -545,6 +625,7 @@ iframe {
   }
 
   .credits-section {
+    margin: 40px;
     display: block; 
   }
 
@@ -591,6 +672,12 @@ iframe {
   .notice-box {
     margin: 30px;
   }
+
+  .faculty-card {
+    margin: 50px;
+    gap: 0;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -605,46 +692,4 @@ iframe {
   display: grid;
   grid-template-columns: auto 1fr auto; 
   align-items: center;
-}
-
-.credits-section {
-  padding: 50px;
-  text-align: center;
-}
-
-.credits-heading {
-  text-align: center;
-  color: #164500;
-  font-size: 30px;
-}
-
-.developers-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.developer-item {
-  width: 200px;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.developer-item img {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.developer-item h3 {
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-.developer-item p {
-  font-size: 14px;
-  color: #666;
 }
