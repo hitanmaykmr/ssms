@@ -1,22 +1,4 @@
-// Get the button and dialog container elements
-  const openDialogBtn = document.getElementById('openDialogBtn');
-  const dialogContainer = document.getElementById('dialogContainer');
-  const closeDialogBtn = document.getElementById('closeDialogBtn');
-  const icon = document.getElementById('icon');
 
-  // Add event listener to open dialog when button is clicked
-  openDialogBtn.addEventListener('click', function() {
-    dialogContainer.style.display = 'block';
-    // Change icon after button press
-    icon.textContent = 'menu_open'; // Change to 'close' icon
-  });
-
-  // Close dialog when close icon is clicked
-  closeDialogBtn.addEventListener('click', function() {
-    dialogContainer.style.display = 'none';
-    // Reset icon when dialog is closed
-    icon.textContent = 'menu'; // Reset to 'search' icon
-  });
 
 
  // Function to scroll to the top of the page smoothly
@@ -40,5 +22,20 @@ function scrollFunction() {
   }
 }
 
+const openDialogBtn = document.getElementById('openDialogBtn');
+const closeDialogBtn = document.getElementById('closeDialogBtn');
+const dialogContainer = document.getElementById('dialogContainer');
 
+openDialogBtn.addEventListener('click', () => {
+  dialogContainer.style.display = 'block';
+  setTimeout(() => {
+    dialogContainer.style.right = '0'; // Slide in from the right
+  }, 50); // Delay to allow display change to take effect
+});
 
+closeDialogBtn.addEventListener('click', () => {
+  dialogContainer.style.right = '-100%'; // Slide out to the right
+  setTimeout(() => {
+    dialogContainer.style.display = 'none';
+  }, 300); // Match transition duration
+});
