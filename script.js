@@ -1,7 +1,4 @@
-
-
-
- // Function to scroll to the top of the page smoothly
+/* Function to scroll to the top of the page smoothly */
  function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -9,7 +6,7 @@
   });
 }
 
-// Show/hide scroll-to-top button based on scroll position
+/* Show/hide scroll-to-top button based on scroll position */
 window.onscroll = function() {
   scrollFunction();
 };
@@ -22,6 +19,7 @@ function scrollFunction() {
   }
 }
 
+/* Mobile Menu of Dialog Box */
 const openDialogBtn = document.getElementById('openDialogBtn');
 const closeDialogBtn = document.getElementById('closeDialogBtn');
 const dialogContainer = document.getElementById('dialogContainer');
