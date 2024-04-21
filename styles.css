@@ -58,6 +58,7 @@ header {
   height: 80px;
 }
 
+
 .school-info {
   text-align: left;
 }
@@ -106,7 +107,7 @@ nav a:hover {
   top: 50%;
   left: 50%;
   width: 80%;
-  height: 60%;
+  height: 75%;
   transform: translate(-50%, -50%);
   padding: 10px;
   border-radius: 5px;
@@ -148,53 +149,43 @@ nav a:hover {
   background-color: #4CBB17;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-.header-grid {
-  display: grid;
-  grid-template-columns: auto 1fr; 
-  align-items: center;
-  justify-content: center;
+.footer p {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-.logo img {
-  width: 60px; 
-  height: 60px;
-}
-
-.school-info {
-  text-align: left; 
-}
-
-.school-name {
-  margin: 0;
-  font-size: 12px; 
-  margin-top: 10px;
-}
-
-.slogan {
-  margin-top: 5px;
-  font-size: 12px; 
-}
-
-nav {
-  display: none; 
-}
-}
-
-@media only screen and (min-width: 768px) {
-  #openDialogBtn {
-    display: none;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.header-grid {
-  display: grid;
-  grid-template-columns: auto 1fr auto; 
-  align-items: center;
+.principal-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 .principal-section {
   margin-bottom: 0;
@@ -240,6 +231,23 @@ nav {
   font-size: 30px;
   margin-bottom: 0;
 }
+
+.location-section {
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .location-section {
   margin-top: 0;
@@ -291,12 +299,27 @@ iframe {
   animation: pulse 1s infinite alternate;
 }
 
-
 .introduction {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-bottom: 5px solid #4CBB17; 
   padding: 50px;
+}
+
+.introduction {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .intro-image {
@@ -314,114 +337,20 @@ iframe {
 }
 
 
-@media (max-width: 768px) {
-  .principal-container {
-    grid-template-columns: auto; 
-    justify-content: center;
-    text-align: center; 
-  }
-
-  .principal-info {
-    display: flex; 
-    flex-direction: column-reverse; 
-    align-items: center; 
-  }
-
-  .principal-info img {
-    margin-left: 0; 
-  }
-
-  .principal-name {
-    color: #4CBB17;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  .message {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: justify;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  .message h1 {
-    color: #164500;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-
-  .location-info {
-    flex-direction: column;
-  }
-
-  iframe {
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  .grid-container {
-    display: block; 
-  }
-  .introduction{
-    margin-bottom: 20px;
-  }
+.notice-section {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-
-.notice-board {
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-.notice-item {
-  margin-bottom: 20px;
-  padding-left: 10px;
-}
-
-.notice-board-title {
-  text-align: center;
-  color: #164500;
-  font-size: 30px;
-}
-
-.notice-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.notice-content {
-  font-size: 16px;
-  color: #333;
-}
-
-.notice-date {
-  background-color: #007bff;
-  color: #ffffff;
-  padding: 5px 10px;
-  display: inline-block;
-  margin-top: 5px;
-}
-
-.attachment {
-  margin-top: 10px;
-}
-
-.attachment-link {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #4CBB17;
-  color: #fff;
-  text-decoration: none;
-}
-
-.attachment-link:hover {
-  background-color: #195000;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .notice-board {
@@ -429,6 +358,12 @@ iframe {
   margin: 20px auto;
   overflow: hidden;
   border: 1px solid #ccc;
+}
+
+.notice-board-title {
+  text-align: center;
+  color: #164500;
+  font-size: 30px;
 }
 
 .notice-container {
@@ -441,16 +376,6 @@ iframe {
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
-
-@keyframes scroll-notice {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(calc(-100% - 10px)); 
-  }
-}
-
 
 .grid-container {
   display: grid;
@@ -467,7 +392,6 @@ iframe {
   border-radius: 0;
   padding: 20px;
 }
-
 
 .intro-image img {
   max-width: 100%;
@@ -512,4 +436,117 @@ iframe {
 
 .attachment-link:hover {
   background-color: #195000;
+}
+
+@keyframes scroll-notice {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100% - 10px)); 
+  }
+}
+
+@media (max-width: 768px) {
+  .principal-container {
+    grid-template-columns: auto; 
+    justify-content: center;
+    text-align: center; 
+  }
+
+  .principal-info {
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center; 
+  }
+
+  .principal-info img {
+    margin-left: 0; 
+  }
+
+  .principal-name {
+    color: #4CBB17;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .message {
+    color: #212121;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .message h1 {
+    color: #164500;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .location-info {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .grid-container {
+    display: block; 
+  }
+  .introduction{
+    margin-bottom: 20px;
+  }
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo img {
+    width: 60px; 
+    height: 60px;
+  }
+  
+  .school-info {
+    text-align: left; 
+  }
+  
+  .school-name {
+    margin: 0;
+    font-size: 12px; 
+    margin-top: 10px;
+  }
+  
+  .slogan {
+    margin-top: 5px;
+    font-size: 12px; 
+  }
+  
+  nav {
+    display: none; 
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  #openDialogBtn {
+    display: none;
+  }
+}
+
+
+.header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto; 
+  align-items: center;
 }
