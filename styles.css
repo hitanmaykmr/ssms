@@ -64,7 +64,7 @@ header {
 
 .main-menu {
   display: flex;
-  margin-left: 400px;
+  margin-left: 300px;
   list-style-type: none;
   padding: 0;
 }
@@ -405,6 +405,11 @@ iframe {
   animation: scroll-notice 15s linear infinite;
 }
 
+.notice-container2 {
+  display: flex;
+  flex-direction: column;
+}
+
 .notice-item {
   padding: 10px;
   border-bottom: 1px solid #ccc;
@@ -576,6 +581,15 @@ iframe {
   
   nav {
     display: none; 
+  }
+
+  .notice-container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notice-box {
+    margin: 30px;
   }
 }
 
