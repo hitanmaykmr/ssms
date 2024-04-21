@@ -49,7 +49,33 @@ header {
   justify-content: space-between;
 }
 
-.container {
+.navbar {
+  background-color: #1f6002;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 20px; 
+}
+
+.nav-links li {
+  margin-right: 20px; 
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.head-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,69 +110,6 @@ header {
   font-size: 16px;
 }
 
-#openDialogBtn {
-  background-color: #00000000;
-  border: none;
-  color: #fff;
-  bottom: 0;
-  margin-bottom: 0;
-  cursor: pointer;
-  font-size: 30px;
-}
-
-.dialog-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: -100%; 
-  width: 100%;
-  height: 100%;
-  background-color: rgba(12, 23, 5, 0.8); 
-  transition: right 0.5s ease-in-out; 
-  z-index: 1000;
-}
-
-.dialog-content {
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  transform: translateY(-50%);
-  width: 70%;
-  height: 70%;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.close-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 24px;
-  color: #000;
-}
-
-.other-links {
-  list-style-type: none;
-  padding: 0;
-  margin-right: 50px;
-  margin-bottom: 15px;
-}
-
-.other-links a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 15px;
-  margin-bottom: 15px;
-  margin-right: 50px;
-}
-
-.other-links a:hover {
-  color: #4CBB17;
-}
 
 .footer {
   background-color: #4CBB17;
@@ -444,8 +407,8 @@ iframe {
 }
 
 .credits-section {
-  padding: 50px;
   text-align: center;
+  margin: 10px;
 }
 
 .credits-heading {
@@ -496,6 +459,9 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .footer p {
+    font-size: 14px;
+  }
   .principal-container {
     grid-template-columns: auto; 
     justify-content: center;
@@ -556,6 +522,7 @@ iframe {
 
   .credits-section {
     display: block; 
+    margin-left: 10px;
   }
 
   .introduction{
@@ -614,30 +581,4 @@ iframe {
   display: grid;
   grid-template-columns: auto 1fr auto; 
   align-items: center;
-}
-
-.navbar {
-  background-color: #1f6002;
-  color: #fff;
-}
-
-.nav-links {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px 20px; 
-}
-
-.nav-links li {
-  margin-right: 20px; 
-}
-
-.nav-links li:last-child {
-  margin-right: 0;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
 }
