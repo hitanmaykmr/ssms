@@ -1,3 +1,31 @@
+const openDialogBtn = document.getElementById('openDialogBtn');
+const closeDialogBtn = document.getElementById('closeDialogBtn');
+const dialogContainer = document.getElementById('dialogContainer');
+
+openDialogBtn.addEventListener('click', () => {
+  dialogContainer.style.display = 'block';
+  setTimeout(() => {
+    dialogContainer.style.right = '0';
+  }, 50);
+});
+
+closeDialogBtn.addEventListener('click', () => {
+  dialogContainer.style.right = '-100%';
+  setTimeout(() => {
+    dialogContainer.style.display = 'none';
+  }, 300);
+});
+
+// Close menu when clicking outside the dialog container
+dialogContainer.addEventListener('click', (e) => {
+  if (e.target === dialogContainer) {
+    dialogContainer.style.right = '-100%';
+    setTimeout(() => {
+      dialogContainer.style.display = 'none';
+    }, 300);
+  }
+});
+
 /* Function to scroll to the top of the page smoothly */
  function scrollToTop() {
   window.scrollTo({
@@ -19,21 +47,3 @@ function scrollFunction() {
   }
 }
 
-/* Mobile Menu of Dialog Box */
-const openDialogBtn = document.getElementById('openDialogBtn');
-const closeDialogBtn = document.getElementById('closeDialogBtn');
-const dialogContainer = document.getElementById('dialogContainer');
-
-openDialogBtn.addEventListener('click', () => {
-  dialogContainer.style.display = 'block';
-  setTimeout(() => {
-    dialogContainer.style.right = '0'; // Slide in from the right
-  }, 50); // Delay to allow display change to take effect
-});
-
-closeDialogBtn.addEventListener('click', () => {
-  dialogContainer.style.right = '-100%'; // Slide out to the right
-  setTimeout(() => {
-    dialogContainer.style.display = 'none';
-  }, 300); // Match transition duration
-});
