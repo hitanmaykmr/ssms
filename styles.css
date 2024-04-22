@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-.noSelect {
+*:focus {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -12,8 +12,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-.noSelect:focus {
   outline: none !important;
 }
 
@@ -611,7 +609,7 @@ iframe {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 80%;
+  width: 70%;
   height: 50%;
   margin: 10px;
   background-color: #fff;
@@ -646,4 +644,3 @@ iframe {
 .other-links a:hover {
   color: #4CBB17;
 }
-
