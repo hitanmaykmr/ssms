@@ -574,7 +574,7 @@ iframe {
   .navbar {
     background-color: #1f6002;
     color: #fff;
-    margin-top: 35px;
+    margin-top: 30px;
   }
 }
 
@@ -611,9 +611,9 @@ iframe {
   transform: translateY(-50%);
   width: 70%;
   height: 50%;
-  margin: 10px;
+  margin: 35px;
   background-color: #fff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -623,7 +623,7 @@ iframe {
   top: 10px;
   right: 10px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 30px;
   color: #000;
 }
 
