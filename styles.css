@@ -4,6 +4,20 @@ body {
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
+@media (hover: none) {
+  *:active {
+    outline: none;
+  }
+}
+
+::selection {
+  background-color: #a1e681;
+}
+
 #scrollBtn {
   display: none;
   position: fixed;
@@ -419,49 +433,6 @@ iframe {
   background-color: #195000;
 }
 
-.credits-section {
-  text-align: center;
-  margin: 10px;
-}
-
-.credits-heading {
-  text-align: center;
-  color: #164500;
-  font-size: 30px;
-}
-
-.developers-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.developer-item {
-  width: 200px;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.developer-item img {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.developer-item h3 {
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-.developer-item p {
-  font-size: 14px;
-  color: #666;
-}
-
-
 @keyframes scroll-notice {
   0% {
     transform: translateY(0);
@@ -632,7 +603,8 @@ iframe {
   right: 0;
   transform: translateY(-50%);
   width: 80%;
-  margin: 30px;
+  height: 50%;
+  margin: 10px;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -656,6 +628,7 @@ iframe {
   margin-bottom: 10px;
 }
 .other-links a {
+  margin-bottom: 15px;
   text-decoration: none;
   color: #000000;
   font-size: 15px;
@@ -664,3 +637,4 @@ iframe {
 .other-links a:hover {
   color: #4CBB17;
 }
+
