@@ -53,20 +53,20 @@ document.addEventListener('contextmenu', function(e) {
 });
 
 
-// Detect F12 key press
+/* Disable F12 key press */
 window.addEventListener('keydown', function (event) {
-  if (event.keyCode === 123) { // F12 keycode
-      console.log('F12 key was pressed.'); // Log a message
-      event.preventDefault(); // Prevent default behavior (may not work in all browsers)
+  if (event.keyCode === 123) { 
+      console.log('F12 key was pressed.'); 
+      event.preventDefault(); 
       return false;
   }
 });
 
 
-// Disable Ctrl+U (View Page Source)
+/* Disable Ctrl+U (View Page Source) */
 document.onkeydown = function (event) {
   event = event || window.event;
-  if (event.ctrlKey && event.keyCode == 85) { // Ctrl+U keycode
+  if (event.ctrlKey && event.keyCode == 85) { 
       return false;
   }
 };
