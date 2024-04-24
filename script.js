@@ -47,7 +47,32 @@ function scrollFunction() {
   }
 }
 
-// Sample data structure for subjects and their PDF links
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+
+// Detect F12 key press
+window.addEventListener('keydown', function (event) {
+  if (event.keyCode === 123) { // F12 keycode
+      console.log('F12 key was pressed.'); // Log a message
+      event.preventDefault(); // Prevent default behavior (may not work in all browsers)
+      return false;
+  }
+});
+
+
+// Disable Ctrl+U (View Page Source)
+document.onkeydown = function (event) {
+  event = event || window.event;
+  if (event.ctrlKey && event.keyCode == 85) { // Ctrl+U keycode
+      return false;
+  }
+};
+
+
+/* TextBooks Data Structure With Path & Algorithms for selection */
 const subjectsData = {
   class5: {
     math: 'path/to/class1_math.pdf',
@@ -111,7 +136,7 @@ const subjectsData = {
   },
 };
 
-// Function to populate subjects dropdown based on class selection
+
 function populateSubjects(classValue) {
   const subjectSelect = document.getElementById('subjectSelect');
   subjectSelect.innerHTML = '<option value="">Select Subject&#8628;</option>';
@@ -121,19 +146,17 @@ function populateSubjects(classValue) {
     subjects.forEach(subject => {
       const option = document.createElement('option');
       option.value = subject;
-      option.text = subject.charAt(0).toUpperCase() + subject.slice(1); // Capitalize first letter
+      option.text = subject.charAt(0).toUpperCase() + subject.slice(1); 
       subjectSelect.appendChild(option);
     });
   }
 }
 
-// Event listener for class select change
 document.getElementById('classSelect').addEventListener('change', function() {
   const classValue = this.value;
   populateSubjects(classValue);
 });
 
-// Event listener for download button click
 document.getElementById('downloadBtn').addEventListener('click', function() {
   const classValue = document.getElementById('classSelect').value;
   const subjectValue = document.getElementById('subjectSelect').value;
@@ -141,6 +164,6 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
   if (classValue && subjectValue && subjectsData[classValue]?.[subjectValue]) {
     window.location.href = subjectsData[classValue][subjectValue];
   } else {
-    alert('Please select a valid class and subject.');
+    alert('Please select a valid class and subject!');
   }
 });
