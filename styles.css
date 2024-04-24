@@ -12,7 +12,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  outline: none !important;
+  outline: none;
 }
 
 @media (hover: none) {
@@ -509,6 +509,62 @@ iframe {
   }
 }
 
+.textbook-container {
+  font-family: 'Poppins';
+  max-width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+#classSelect {
+  font-family: 'Poppins';
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.download-button {
+  text-align: center;
+  font-family: 'Poppins';
+}
+
+input {
+  font-family: 'Poppins';
+}
+
+select {
+  font-family: 'Poppins';
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #4CBB17;
+  margin-bottom: 20px;
+  font-size: 16px;
+  appearance: none; 
+  background-color: #ffffff; 
+  color: #333;
+}
+
+option {
+  top: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+#downloadBtn {
+  font-family: 'Poppins';
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CBB17;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#downloadBtn:hover {
+  background-color: #195000;
+}
+
+
 @media (max-width: 768px) {
   .footer p {
     font-size: 14px;
@@ -642,59 +698,4 @@ iframe {
   display: grid;
   grid-template-columns: auto 1fr auto; 
   align-items: center;
-}
-
-.textbook-container {
-  font-family: 'Poppins';
-  max-width: 100%;
-  margin: 20px;
-  text-align: center;
-}
-
-#classSelect {
-  font-family: 'Poppins';
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.download-button {
-  text-align: center;
-  font-family: 'Poppins';
-}
-
-input {
-  font-family: 'Poppins';
-}
-
-select {
-  font-family: 'Poppins';
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #4CBB17;
-  margin-bottom: 20px;
-  font-size: 16px;
-  appearance: none; 
-  background-color: #c1ecad; 
-  color: #333;
-}
-
-option {
-  top: 5px;
-  font-size: 16px;
-  background-color: #fff;
-}
-
-#downloadBtn {
-  font-family: 'Poppins';
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4CBB17;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-#downloadBtn:hover {
-  background-color: #195000;
 }
