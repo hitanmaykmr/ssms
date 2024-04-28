@@ -108,6 +108,7 @@ header {
   background-color: rgba(0, 0, 0, 0.8); 
   transition: right 0.5s ease-in-out; 
   z-index: 1000;
+  margin-bottom: 0;
 }
 
 .dialog-content {
@@ -616,6 +617,106 @@ option {
   margin-right: 5px;
 }
 
+.log-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 500px;
+}
+
+.login-container {
+  margin-top: 0;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+  text-align: center;
+}
+
+form {
+  margin: 15px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#errorMsg {
+  color: red;
+  font-size: 14px;
+}
+
+.logo-img {
+  max-width: 80px;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #41ad0f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.custom-button:hover {
+  background-color: #1f6002;
+}
+
+
+.highlight-section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #e8f4e7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.highlight-box {
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 20px 30px rgba(0,0,0,.05)
+}
+
+.highlight-icon {
+  text-align: center;
+}
+
+.star {
+  font-size: 35px;
+  color: #4CBB17;
+}
+
+.highlight-content {
+  text-align: center;
+  margin: 10px;
+}
+
 @media (max-width: 768px) {
   .footer p {
     font-size: 14px;
@@ -766,40 +867,8 @@ option {
   align-items: center;
 }
 
-.highlight-section {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: #e8f4e7;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
-
-.highlight-box {
-  border-radius: 5px;
-  margin: 20px;
-  background-color: #ffffff;
-  padding: 10px;
-  box-shadow: 0 20px 30px rgba(0,0,0,.05)
-}
-
-.highlight-icon {
-  text-align: center;
-}
-
-.star {
-  font-size: 35px;
-  color: #4CBB17;
-}
-
-.highlight-content {
-  text-align: center;
-  margin: 10px;
-}
-
 @media (max-width: 768px) {
   .highlight-section {
     grid-template-columns: repeat(1, 1fr); 
   }
 }
-

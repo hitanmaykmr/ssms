@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Sundarmal Modern School</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<button id="scrollBtn" onclick="scrollToTop()">&#8593;</button>
+<header>
+  <div class="head-container">
+    <div class="header-grid">
+      <div class="logo"><img src="logo.png" alt="School Logo"></div>
+      <div class="header-content">
+        <div class="school-info">
+          <h1 class="school-name">Sri Sundarmal Modern School</h1>
+          <p class="slogan">A.T.Road, Sivasagar-785640</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+<br><br><br>
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+    <li><a href="notices.html"><i class="fas fa-bullhorn"></i> Notices</a></li>
+    <li><a href="textbooks.html"><i class="fas fa-book"></i> Text Books</a></li>
+    <li><a href="faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Admin Panel</a></li>
+    <li><a href="developers.html"><i class="fas fa-code"></i> Site Developers</a></li>
+  </ul>
+</nav>
+<section class="menu">
+  <div class="menu-content">
+  <button id="openDialogBtn"><i class="fas fa-bars fa-1x"></i>&nbsp;&nbsp;MENU</button>
+</div>
+</section>
+<div class="dialog-container" id="dialogContainer">
+  <div class="dialog-content">
+    <span class="close-icon" id="closeDialogBtn">&times;</span>
+    <ul class="other-links">
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+      <li><a href="notices.html"><i class="fas fa-bullhorn"></i> NOTICES</a></li>
+      <li><a href="faculty.html"><i class="fas fa-chalkboard-teacher"></i> FACULTY</a></li>
+      <li><a href="textbooks.html"><i class="fas fa-book"></i> TEXT BOOKS</a></li>
+      <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> ADMIN PANEL</a></li>
+      <li><a href="developers.html"><i class="fas fa-code"></i> SITE DEVELOPERS</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="log-container">
+  <div class="login-container">
+    <img src="logo.png" alt="Logo" class="logo-img">
+    <h1>LOGIN</h1>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
+      <button type="submit" class="custom-button">Login</button>
+    </form>
+    <p id="errorMsg"></p>
+  </div>
+</div>
+
+
+<br><br><br>
+
+
+<footer class="footer">
+  <p>&copy;<strong> Sri Sundarmal Modern School</strong></p>
+</footer>
+
+<script>
+  function submitForm() {
+  document.getElementById('loginForm').submit();
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>

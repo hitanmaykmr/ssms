@@ -53,6 +53,30 @@ document.addEventListener('contextmenu', function(e) {
 });
 
 
+
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent default form submission
+
+  // Get input values
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  // Reset previous error message
+  document.getElementById('errorMsg').innerText = '';
+
+  // Check if username and password are correct (sample check)
+  if (username === 'admin' && password === 'password') {
+    // Redirect to admin dashboard or perform other actions
+    window.location.href = '/path/to/admin.html'; // Update the path accordingly
+  } else {
+    // Display error message
+    document.getElementById('errorMsg').innerText = 'Invalid username or password.';
+  }
+});
+
+
+
+
 /* Disable F12 key press */
 window.addEventListener('keydown', function (event) {
   if (event.keyCode === 123) { 
@@ -167,3 +191,6 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
     alert('Please select a valid class and subject!');
   }
 });
+
+
+
