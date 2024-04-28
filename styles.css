@@ -766,21 +766,22 @@ option {
   align-items: center;
 }
 
-
 .highlight-section {
+  margin-top: 5px;
+  margin-bottom: 5px;
   background-color: #e8f4e7;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 
 .highlight-box {
+  border-radius: 5px;
   margin: 20px;
   background-color: #ffffff;
   padding: 10px;
   box-shadow: 0 20px 30px rgba(0,0,0,.05)
 }
-
 
 .highlight-icon {
   text-align: center;
@@ -801,3 +802,4 @@ option {
     grid-template-columns: repeat(1, 1fr); 
   }
 }
+
