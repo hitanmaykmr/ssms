@@ -401,7 +401,6 @@ iframe {
   text-align: left;
 }
 
-
 .notice-section {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
@@ -453,7 +452,14 @@ iframe {
   gap: 20px;
   padding: 20px; 
 }
-
+.intro-content p{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: justify;
+}
+.intro-content h2{
+  color: #164500;
+}
 .introduction,
 .notice-section {
   background-color: #fff;
@@ -618,6 +624,7 @@ option {
 }
 
 .log-container {
+  margin: 20px;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -627,6 +634,7 @@ option {
 }
 
 .login-container {
+  margin: 20px;
   margin-top: 0;
   width: 400px;
   padding: 20px;
@@ -684,7 +692,6 @@ input {
 .custom-button:hover {
   background-color: #1f6002;
 }
-
 
 .highlight-section {
   margin-top: 5px;
@@ -819,6 +826,11 @@ input {
     display: none; 
   }
 
+  .menu {
+    margin-top: 0;
+    background-color: #1f6002;
+  }
+
   .notice-container2 {
     display: flex;
     flex-direction: column;
@@ -826,11 +838,6 @@ input {
 
   .notice-box {
     margin: 30px;
-  }
-
-  .menu {
-    margin-top: 0;
-    background-color: #1f6002;
   }
 
   .profile-grid {
@@ -872,3 +879,5 @@ input {
     grid-template-columns: repeat(1, 1fr); 
   }
 }
+
+
