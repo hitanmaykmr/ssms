@@ -914,3 +914,55 @@ input {
     grid-template-columns: repeat(1, 1fr); 
   }
 }
+
+
+
+main{
+  width: min(80%,1100px);
+  background-color: #fff;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.block{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.card{
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #4CBB17;
+  width: 100%;
+  transform: .1s linear;
+  margin-top: 20px;
+}
+
+.card img{
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+main h2{
+  color: #164500;
+  text-align: center;
+  font-size: clamp(25px,4vw,50px);
+  font-weight: 700;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.text p{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
