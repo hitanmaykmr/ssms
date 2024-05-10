@@ -191,6 +191,3 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
     alert('Please select a valid class and subject!');
   }
 });
-
-
-
