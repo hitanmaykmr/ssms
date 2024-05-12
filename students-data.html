@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSMS-Students Data Verification</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<button id="scrollBtn" onclick="scrollToTop()">&#8593;</button>
+
+
+<header>
+  <div class="head-container">
+    <div class="header-grid">
+      <div class="logo"><img src="logo.png" alt="School Logo"></div>
+      <div class="header-content">
+        <div class="school-info">
+          <h1 class="school-name">Sri Sundarmal Modern School</h1>
+          <p class="slogan">A.T.Road, Sivasagar-785640</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br><br><br>
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html"> <i class="fas fa-home icon-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+    <li><a href="notices.html"><i class="fas fa-bullhorn"></i> Notices</a></li>
+    <li><a href="textbooks.html"><i class="fas fa-book"></i> Text Books</a></li>
+    <li><a href="faculty.html"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Admin Panel</a></li>
+  </ul>
+</nav>
+<section class="menu">
+  <div class="menu-content">
+  <button id="openDialogBtn"><i class="fas fa-bars fa-1x"></i>&nbsp;&nbsp;MENU</button>
+</div>
+</section>
+<div class="dialog-container" id="dialogContainer">
+  <div class="dialog-content">
+    <span class="close-icon" id="closeDialogBtn">&times;</span>
+    <ul class="other-links">
+      <li><a href="index.html"> <i class="fas fa-home icon-home"></i> HOME</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+      <li><a href="notices.html"><i class="fas fa-bullhorn"></i> NOTICES</a></li>
+      <li><a href="faculty.html"><i class="fas fa-chalkboard-teacher"></i> FACULTY</a></li>
+      <li><a href="textbooks.html"><i class="fas fa-book"></i> TEXT BOOKS</a></li>
+      <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> ADMIN PANEL</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="search-print-container">
+    <h2>STUDENT DATA RECORDS</h2>
+    <label for="tableId"></label>
+    <input type="text" id="tableId"><br>
+    <button onclick="showTable()" class="btn">SEARCH</button> 
+    <button onclick="printPage()" class="btn">PRINT</button>
+</div><br>
+
+
+
+<style>
+  @media print {
+    .scrollBtn,
+    .header-grid,
+    .menu,
+    .navbar,
+    .nav-links,
+    .header,
+    .footer,
+    .search-print-container {
+      display: none;
+    }
+  }
+</style>
+
+
+
+<table class="customTable" id="SSMS/SIV/STD/10A/30"><tbody>
+    <tr><td colspan="3"><img src="logo.png" alt="logo" style="width: 100px; align-items: center; margin-left: 45%; margin-right: 50%;" class="center"></td></tr>
+    <tr><td colspan="2" style="text-align: center;"><strong>SRI SUNDARMAL MODERN SCHOOL<BR>STUDENT'S PROFILE</strong></td></tr>
+    <tr>
+      <td>STUDENT'S NAME:</td>
+      <td>YOUR NAME</td>
+    </tr>
+    <tr>
+      <td>FATHER'S NAME:</td>
+      <td>FATHER NAME</td>
+    </tr>
+    <tr>
+      <td>ADDRESS:</td>
+      <td>DOLMUKH, SIVASAGAR-785640</td>
+    </tr>
+    <tr>
+      <td>CLASS:</td>
+      <td>X (A)</td>
+    </tr>
+      <td>PHONE NO:</td>
+      <td>+91 999998888</td>
+    </tr>
+    </tr>
+    <td>STUDENT ID:</td>
+    <td>SSMS/SIV/STD/10A/30</td>
+    </tr>
+  </tbody>
+  </table>
+
+
+
+
+
+
+
+
+<BR><BR>
+<script>
+    window.onload = function() {
+        var tableId = document.getElementById("tableId");
+        tableId.value = "SSMS/SIV/STD/";
+      };
+    function showTable() {
+        var tableId = document.getElementById('tableId').value;
+        var table = document.getElementById(tableId);
+        if (table) {
+            table.style.display = 'table'; 
+            calculateTotalAndPercentage(); 
+        } else {
+            alert('ID ' + tableId + 'NOT VALID');
+        }
+    }
+    function printPage() {
+  window.print();
+}
+</script>
+   
+<script src="script.js"></script>
+</body>
+</html>
